@@ -32,6 +32,18 @@ datasources:
     basicAuthUser:
     withCredentials:
     isDefault: false
+  - name: Prometheus - Service Orders
+    type: prometheus
+    access: proxy
+    orgId: 1
+    uid: grafana_prometheus_service_orders
+    url: $PROMETHEUS_INTERNAL_URL
+    user:
+    database:
+    basicAuth:
+    basicAuthUser:
+    withCredentials:
+    isDefault: false
   - name: Tempo
     type: tempo
     access: proxy
@@ -44,3 +56,4 @@ datasources:
     basicAuthUser:
     withCredentials:
     isDefault: false
+
